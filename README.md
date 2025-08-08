@@ -44,14 +44,20 @@ This project integrates **RFID card scanning**, **ESP32-CAM facial recognition**
 
 ```bash
 project/
-├── CIRCUITDIAGRAM.png             # Circuit diagram
-├── arduino_code.ino              # Arduino Uno sketch
-├── esp32_code.ino                # ESP32-CAM code
-├── server.py                     # Python face recognition server
-└── images/
-    └── <RFID_UID>/
-        ├── sample1.jpg           # Reference image of authorized user
-        └── <username>.txt        # Text file with username
+├── server.py                    # Python socket server + face recognition
+├── RFID_FaceAuth_Uno/
+│   └── RFID_FaceAuth_Uno.ino        # Arduino Uno sketch with RFID, LCD, and WiFi communication
+├── ESP32-CAM/
+│   ├── ESP32-CAM.ino            # ESP32-CAM main code
+│   ├── app_httpd.cpp            # Camera HTTP server logic
+│   ├── camera_index.h           # HTML UI for camera streaming
+│   ├── camera_pins.h            # Pin configuration for different ESP32-CAM modules
+│   └── partitions.csv           # Flash partition table (optional for ESP-IDF)
+├── images/
+│   └── <RFID_SERIAL>/sample1.jpg   # Stored face image for comparison
+├── Circuit_Diagram.png          # Visual circuit diagram of the setup
+└── README.md                    # This file
+
 ```
 
 ---
@@ -72,12 +78,12 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 ## 🚀 How to Run
 
 ### 1. Arduino Setup
-- Upload `arduino_code.ino` to Arduino Uno.
+- Upload `RFID_FaceAuth_Uno.ino` to Arduino Uno.
 - Connect RFID and LCD as per circuit.
 - Replace `ssid` and `password` with your Wi-Fi credentials in the Arduino code.
 
 ### 2. ESP32-CAM Setup
-- Flash `esp32_code.ino` using Arduino IDE with correct board & partition settings.
+- Flash `ESP32-CAM.ino` using Arduino IDE with correct board & partition settings.
 - Ensure Wi-Fi credentials are updated.
 
 ### 3. Python Server Setup
@@ -128,7 +134,7 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 - OpenCV for face recognition  
 - Arduino and ESP32 open-source communities  
-- Dhananjayan Seshadri
+- Made by Dhananjayan Seshadri
 
 ---
 
