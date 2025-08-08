@@ -6,7 +6,7 @@ This project integrates **RFID card scanning**, **ESP32-CAM facial recognition**
 
 ---
 
-## 🧠 Overview
+## Overview
 
 - **User scans RFID card.**
 - **LCD prompts user to show face to the camera.**
@@ -17,7 +17,7 @@ This project integrates **RFID card scanning**, **ESP32-CAM facial recognition**
 
 ---
 
-## 🔧 Components Used
+## Components Used
 
 | Component         | Description                      |
 |------------------|----------------------------------|
@@ -30,7 +30,7 @@ This project integrates **RFID card scanning**, **ESP32-CAM facial recognition**
 
 ---
 
-## 💻 Software Stack
+## Software Stack
 
 - **Arduino IDE**
 - **ESP32-CAM Camera Web Server**
@@ -40,7 +40,7 @@ This project integrates **RFID card scanning**, **ESP32-CAM facial recognition**
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```bash
 project/
@@ -62,7 +62,7 @@ project/
 
 ---
 
-## 🔌 Wiring / Circuit
+## Wiring / Circuit
 
 The circuit wiring connects:
 
@@ -75,7 +75,7 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Arduino Setup
 - Upload `RFID_FaceAuth_Uno.ino` to Arduino Uno.
@@ -101,7 +101,7 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 ---
 
-## 🧪 Sample Flow
+## Sample Flow
 
 1. User taps RFID card.
 2. LCD shows “Show face to camera”.
@@ -112,7 +112,7 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 ---
 
-## ⚙️ Future Improvements
+## Future Improvements
 
 - Replace OpenCV template matching with deep learning-based face recognition (e.g., FaceNet, dlib).
 - Add SD card support on ESP32 to store captured images.
@@ -121,7 +121,7 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 ---
 
-## 📚 Learnings
+## Learnings
 
 - Working with AT commands to communicate with ESP8266
 - Using OpenCV for basic face detection and template matching
@@ -130,7 +130,7 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 ---
 
-## ✨ Credits
+## Credits
 
 - OpenCV for face recognition  
 - Arduino and ESP32 open-source communities  
@@ -138,6 +138,6 @@ Refer to the image [`Circuit_Diagram.png`](./Circuit_Diagram.png) for detailed c
 
 ---
 
-## 📝 License
+## License
 
 This project is open source and free to use for academic and non-commercial purposes.
