@@ -65,7 +65,7 @@ The circuit wiring connects:
 - **LCD I2C Display** to Arduino (SDA/SCL)  
 - **ESP8266 Wi-Fi module** to Arduino using SoftwareSerial (D2/D3)  
 
-Refer to the image [`CIRCUITDIAGRAM.png`](./CIRCUITDIAGRAM.png) for detailed connections.
+Refer to the image [`Ciruit_Diagram.png`](./Ciruit_Diagram.png) for detailed connections.
 
 ---
 
